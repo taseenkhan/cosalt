@@ -2930,7 +2930,7 @@ section.pricing-area.style_two {
   <--- Start consalt Call Area Style Two CSS --->
 ============================================================ */
 section.call_area.style_two {
-    background: url(../images/home_two/call_bg.png);
+    background: url(../images/home_two/Get-a-free-finance-BG.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -3293,7 +3293,7 @@ section.hero_area.style_three {
     content: "";
     left: 0;
     bottom: -19px;
-    background: url(../images/home_3/hero_border.png);
+    background: url(../images/home_two/Dandii.png);
     height: 12px;
     width: 100%;
     background-repeat: no-repeat;
@@ -3718,7 +3718,7 @@ section.service_area.style_two.style_three.inner_page {
 ============================================================ */
 
 section.why_choose_us {
-    background: url(../images/home_3/choose_bg.jpg);
+    background: url(../images/home_two/We-provide-creative-solution-BG.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
