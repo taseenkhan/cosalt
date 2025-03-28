@@ -195,7 +195,7 @@ span.bi.bi-sun {
     width: 100%;
     -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
-    background: #1161b1!important;
+    background: white!important;
     transition: .5s;
     z-index: 9;
 }
@@ -204,7 +204,7 @@ span.bi.bi-sun {
     color: #fff;
 }
 .sticky .header-menu ul li a i {
-    color: #fff;
+    color: #283e7a;
 }
 .sticky .col-lg-2.pt-10 {
     padding-top: 0 !important;
@@ -462,7 +462,7 @@ section.brand_area.style_two {
     position: absolute;
     left: 0;
     bottom: 33%;
-    background: url(../images/home_3/hero_border.png);
+    background: url(../images/home_two/Dandii.png);
     height: 15px;
     width: 100%;
     content: "";
@@ -1171,7 +1171,7 @@ section.steps_area {
     right: 59px;
     width: 30px;
     height: 1px;
-    background-color: #1fa7ea;
+    background-color: #00c957;
     content: "";
 }
 h3.steps_number {
@@ -1179,14 +1179,14 @@ h3.steps_number {
     right: 30px;
     top: 0;
     font-size: 18px;
-    color: #1fa7ea;
+    color: #00c957;
     font-weight: 400;
 }
 .steps_icon {
     width: 76px;
     height: 76px;
     border-radius: 38px;
-    background-color: #1fa7ea;
+    background-color: #00c95c;
     line-height: 76px;
     text-align: center;
     transition: .5s;
@@ -1990,17 +1990,17 @@ span.right_info {
 }
 .consalt-header-area.style_two .row.style_bg {
     border-radius: 5px;
-    background-color: #1fa7ea;
+    background-color: white;
     margin: 0;
     padding: 0 2px 0 19px;
 }
 .consalt-header-area.style_two .header-menu ul li a {
     display: inline-block;
     padding: 28px 0 28px;
-    color: #ffff;
+    color: #28337a;
 }
 .consalt-header-area.style_two .header-menu ul li span {
-    color: #fff;
+    color: #28337a;
 }
 
 /* cibsakt header right */

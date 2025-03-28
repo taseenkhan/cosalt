@@ -1,6 +1,6 @@
 a.meanmenu-reveal{display:none}
 .mean-container .mean-bar {
-  background: #1fa7ea;
+  background: white;
   float: left;
   min-height: 60px;
   padding: 4px 0 0;
@@ -98,7 +98,7 @@ a.meanmenu-reveal{display:none}
 	border-radius: 0;
 }
 .mean-container a.meanmenu-reveal span {
-  background: #fff;
+  background: #283e7a;
 }
 .mobile-menu-area {
   background: #fff none repeat scroll 0 0;
@@ -120,10 +120,10 @@ a.meanmenu-reveal{display:none}
   color: #fff !important;
 }
 .mean-container a.meanmenu-reveal:hover span {
-  background: #fff;
+  background: #1fa7ea;
 }
 .mean-container .mean-bar::before {
-    color: #fff;
+    color: #283e7a;
     content: "Elite";
     font-size: 28px;
     font-weight: 600;
