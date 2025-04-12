@@ -45,6 +45,125 @@
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 </head>
 
+
+<style>
+    /* Reset */
+
+
+.container {
+  z-index: 1;
+}
+
+#openPopupBtn {
+  padding: 12px 24px;
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#openPopupBtn:hover {
+  background: #005fcc;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.popup {
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.popup h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.popup input,
+.popup textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.popup button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.popup button[type="submit"]:hover {
+  background: #218838;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .popup {
+    padding: 20px;
+  }
+
+  .popup h2 {
+    font-size: 1.4rem;
+  }
+}
+
+</style>
+
 <body>
 
 <!--========= Prealoader ==============-->
@@ -73,7 +192,7 @@
 		<div class="row topber_upper align-items-center d-flex">
 			<div class="col-lg-8">
 				<div class="header-address-info">
-					<p><span>Mail : info@example.com</span> <span class="right_info">Call Us :</span><span> 658 Lane Drive st.Dhaka</span></p>
+					<p><span>Mail : shahbaz@eliteconsultingsllc.com</span> <span class="right_info">Call Us :</span><span>+971 588 - 273 - 634</span></p>
 				</div>
 			</div>
 			<div class="col-lg-4">
@@ -167,7 +286,7 @@
 								<li><a href="blog-details.html">Blog Details</a></li>
 							</ul>
 						</li>
-						
+						<li><a href="about.html">About</a></li>		
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 					
@@ -326,14 +445,13 @@
 			<div class="col-lg-6">
 				<!-- hero content -->
 				<div class="hero_content">
-					<h4>FINANCE CONSULTING</h4>
-					<h1>Digital Finance Const.<br>Growing Business</h1>
-					<p>Continually plagiarize virtual web services with home_two maximizing 
-						action items. Globally build front-end</p>
+					<h4>Business Consulting</h4>
+					<h1>Building the Next-generation <br>entrepreneurs in the UAE.</h1>
+					<p>Fast-track your journey to entrepreneurship success in the UAE with made-to-order business and finance consulting.  </p>
 						<!-- home_two button -->
 					<div class="home_two_button">
 						<div class="hero_btn style_two">
-							<a href="contact.html"><i class="far fa-thumbs-up"></i>Get Started <span></span></a>
+							<a href="#" id="openPopupBtn"><i class="far fa-thumbs-up"></i>Get Started <span></span></a>
 						</div>
 						<div class="hero_video_btn">
 							<a class="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true" href="https://youtu.be/BS4TUd7FJSg"><i class="bi bi-play-btn"></i></a>
@@ -450,32 +568,30 @@
 			</div>
 			<div class="col-lg-6 col-md-12">
 				<div class="section_title">
-					<h4>FINANCE CONSULTING</h4>
-					<h1>The Best Finance Consulting</h1>
-					<h1>In Town Since 2007</h1>
-					<p>Globally engage cross-media leadership skills before cross-media innovation
-						develop standardized platforms without robust applications. Conveniently
-						go forward collaboration and idea-sharing</p>
+					<h4>Customers Who Make Our Character  </h4>
+					<h1>Entrepreneur-Focused Company Setup and Finance Consulting Solutions</h1>
+		
+					<p>Elite Consultant is an entrepreneur-focused business and finance consulting firm, guiding the next-generation to build, scale, and operate in the UAE.  </p>
 				</div>
 					
 					<div class="row">
 						<div class="col-lg-6 col-md-6">
 							<div class="about-icon_box">
 								<div class="about_icon">
-									<img src="assets/images/home_two/about_icon1.png" alt="">
+									<img src="assets/images/home_two/Company-Setup.png" alt="">
 								</div>
 								<div class="about_content style_two">
-									<h3>Business Planning & Technologist</h3>
+									<h3>Company Setup and Support System </h3>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6">
 							<div class="about-icon_box">
 								<div class="about_icon">
-									<img src="assets/images/home_two/about_icon2.png" alt="">
+									<img src="assets/images/home_two/Finance-and-accounting.png" alt="">
 								</div>
 								<div class="about_content style_two">
-									<h3>Human home_twos and Consulting</h3>
+									<h3>Finance and Accounting Solution </h3>
 								</div>
 							</div>
 						</div>
@@ -515,9 +631,8 @@
 				<!-- section title -->
 				<div class="section_title text-center">
 					<h4>FEATURED SERVICE</h4>
-					<h1>Unlocking Your Business's Potential with </h1>
-					<h1>the Best Innovate Consulting active and</h1>
-					<h1> Dedicated Customers</h1>
+					<h1>We exist to empower next-gen entrepreneurs by blending strategic insight, deep local knowledge, and made-to-order consulting  </h1>
+				
 				</div>
 			</div>
 		</div>
@@ -526,11 +641,11 @@
 				<!-- feature item -->
 				<div class="feature_item">
 					<div class="feature_icon">
-						<img src="assets/images/home_one/feature_icon01.png" alt="">
+						<img src="assets/images/home_two/Company-Setup.png" alt="">
 					</div>
 					<div class="feature_content">
-						<h3>Business Planning and Technologist</h3>
-						<p>Completely implement globals without impactful markets in conveniently done innovate customer directed</p>
+						<h3>Company Setup and Support System</h3>
+						<p>Setup your company in the UAE’s key business ecosystem. With tailor-made consulting, we help you choose a legal structure that meets your needs and provide end-to-end setup assistance.</p>
 					</div>
 					<div class="feature_number">
 						<h6 class="feature_no">01</h6>
@@ -541,11 +656,13 @@
 				<!-- feature item -->
 				<div class="feature_item upper">
 					<div class="feature_icon">
-						<img src="assets/images/home_one/feature_icon02.png" alt="">
+						<img src="assets/images/home_two/Finance-and-accounting.png" alt="">
 					</div>
 					<div class="feature_content">
-						<h3>Human home ones and Consulting</h3>
-						<p>Completely implement globals without impactful markets in conveniently done innovate customer directed</p>
+						<h3>
+							Finance and Accounting Solution
+							</h3>
+						<p>Ensure tax compliance in the UAE with Elite Consultant. We help you stay compliant and manage your accounting with complete clarity</p>
 					</div>
 					<div class="feature_number">
 						<h6 class="feature_no">02</h6>
@@ -556,11 +673,11 @@
 				<!-- feature item -->
 				<div class="feature_item">
 					<div class="feature_icon">
-						<img src="assets/images/home_one/feature_icon03.png" alt="">
+						<img src="assets/images/home_two/Corporate-services.png" alt="">
 					</div>
 					<div class="feature_content">
-						<h3>Opportunities Global Business Service</h3>
-						<p>Completely implement globals without impactful markets in conveniently done innovate customer directed</p>
+						<h3>Corporate Services</h3>
+						<p>We offer a wide range of corporate services to simplify your professional commitments, so you can focus on what matters most—business growth.</p>
 					</div>
 					<div class="feature_number">
 						<h6 class="feature_no">03</h6>
@@ -571,11 +688,11 @@
 				<!-- feature item -->
 				<div class="feature_item upper">
 					<div class="feature_icon">
-						<img src="assets/images/home_one/feature_icon04.png" alt="">
+						<img src="assets/images/home_two/Advisory-Services.png" alt="">
 					</div>
 					<div class="feature_content">
-						<h3>Insurance for Family Consulting</h3>
-						<p>Completely implement globals without impactful markets in conveniently done innovate customer directed</p>
+						<h3>Advisory Services</h3>
+						<p>By analyzing client challenges, we apply tailored strategies that unlock new opportunities and ensure sustainable growth.</p>
 					</div>
 					<div class="feature_number">
 						<h6 class="feature_no">04</h6>
@@ -584,68 +701,7 @@
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-lg-3 col-md-6">
-				<!-- feature item -->
-				<div class="feature_item">
-					<div class="feature_icon">
-						<img src="assets/images/home_one/feature_icon01.png" alt="">
-					</div>
-					<div class="feature_content">
-						<h3>Business Planning and Technologist</h3>
-						<p>Completely implement globals without impactful markets in conveniently done innovate customer directed</p>
-					</div>
-					<div class="feature_number">
-						<h6 class="feature_no">01</h6>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<!-- feature item -->
-				<div class="feature_item upper">
-					<div class="feature_icon">
-						<img src="assets/images/home_one/feature_icon02.png" alt="">
-					</div>
-					<div class="feature_content">
-						<h3>Human home ones and Consulting</h3>
-						<p>Completely implement globals without impactful markets in conveniently done innovate customer directed</p>
-					</div>
-					<div class="feature_number">
-						<h6 class="feature_no">02</h6>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<!-- feature item -->
-				<div class="feature_item">
-					<div class="feature_icon">
-						<img src="assets/images/home_one/feature_icon03.png" alt="">
-					</div>
-					<div class="feature_content">
-						<h3>Opportunities Global Business Service</h3>
-						<p>Completely implement globals without impactful markets in conveniently done innovate customer directed</p>
-					</div>
-					<div class="feature_number">
-						<h6 class="feature_no">03</h6>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<!-- feature item -->
-				<div class="feature_item upper">
-					<div class="feature_icon">
-						<img src="assets/images/home_one/feature_icon04.png" alt="">
-					</div>
-					<div class="feature_content">
-						<h3>Insurance for Family Consulting</h3>
-						<p>Completely implement globals without impactful markets in conveniently done innovate customer directed</p>
-					</div>
-					<div class="feature_number">
-						<h6 class="feature_no">04</h6>
-					</div>
-				</div>
-			</div>
-		</div>
+	
 
 	</div>
 	<div class="feature_shape bounce-animate-3">
@@ -671,9 +727,9 @@
 			<div class="col-lg-12">
 				<!-- section title -->
 				<div class="section_title left">
-					<h4>SERVICES WE PROVIDE</h4>
-					<h1>Individuals offer Professional </h1>
-					<h1>Services we Provide</h1>
+					<h4>Our Unique Strength</h4>
+					<h1>No more headaches for entrepreneurs hunting for innovation in key business activities. Our simplified 3-step model gives clarity to your growth journey: </h1>
+			
 				</div>
 			</div>
 		</div>
@@ -684,11 +740,11 @@
 					<div class="service_single_item style_two">
 						<div class="service_content">
 							<div class="service_icon">
-								<img src="assets/images/home_two/service_icon1.png" alt="">
+								<img src="assets/images/home_two/Evaluate.png" alt="">
 							</div>
-							<h4>FINANCE</h4>
-							<h3>Investment Idea</h3>
-							<p>Seamlessly expedite extensible methodologies benchmark </p>
+						
+							<h3>Evaluate </h3>
+							<p>We evaluate your desired service needs and assess key areas for improvement.</p>
 							<div class="service_btn">
 								<a href="service-details.html">Read More <i class="flaticon flaticon-right-arrow"></i></a>
 							</div>
@@ -703,11 +759,11 @@
 					<div class="service_single_item style_two">
 						<div class="service_content">
 							<div class="service_icon">
-								<img src="assets/images/home_two/service_icon2.png" alt="">
+								<img src="assets/images/home_two/Consult.png" alt="">
 							</div>
-							<h4>FINANCE</h4>
-							<h3>Investment Idea</h3>
-							<p>Seamlessly expedite extensible methodologies benchmark </p>
+				
+							<h3>Consult </h3>
+							<p>We offer strategic consulting tailored to your business challenges, turning roadblocks into growth opportunities. </p>
 							<div class="service_btn">
 								<a href="service-details.html">Read More <i class="flaticon flaticon-right-arrow"></i></a>
 							</div>
@@ -722,11 +778,11 @@
 					<div class="service_single_item style_two">
 						<div class="service_content">
 							<div class="service_icon">
-								<img src="assets/images/home_two/service_icon1.png" alt="">
+								<img src="assets/images/home_two/Deliver.png" alt="">
 							</div>
-							<h4>FINANCE</h4>
-							<h3>Investment Idea</h3>
-							<p>Seamlessly expedite extensible methodologies benchmark </p>
+					
+							<h3>Deliver</h3>
+							<p>We deliver what we promise, with a focus on maximum impact and long-term value.</p>
 							<div class="service_btn">
 								<a href="service-details.html">Read More <i class="flaticon flaticon-right-arrow"></i></a>
 							</div>
@@ -736,25 +792,7 @@
 						</div>					
 					</div>
 				</div>
-				<div class="col-lg-12">
-					<!-- feature item -->
-					<div class="service_single_item style_two">
-						<div class="service_content">
-							<div class="service_icon">
-								<img src="assets/images/home_two/service_icon2.png" alt="">
-							</div>
-							<h4>FINANCE</h4>
-							<h3>Investment Idea</h3>
-							<p>Seamlessly expedite extensible methodologies benchmark </p>
-							<div class="service_btn">
-								<a href="service-details.html">Read More <i class="flaticon flaticon-right-arrow"></i></a>
-							</div>
-						</div>
-						<div class="service_thumb">
-							<img src="assets/images/home_two/service_4.png" alt="">
-						</div>					
-					</div>
-				</div>
+			
 			</div>
 		</div>
 	</div>
@@ -980,97 +1018,7 @@
 		</div>
 		
 	</div>
-	<div class="container-fluid">
-		<!-- case study box -->
-		<div class="case-study_box">
-			<!-- case study single box -->
-			<div class="case-study-single-box upper">
-				<div class="case-study-thumb">
-					<img src="assets/images/home_two/case_1.png" alt="">	
-					<div class="case-study-content">
-						<p>Technology</p>
-						<h3><a href="#">Business Implement</a></h3>
-						<p class="case_text">Media leadership skill before cross
-							platforms without done</p>
-						<div class="consalt_btn style_two style_four">
-							<a href="protfolio-details.html">View Details<span></span></a>
-						</div>	
-					</div>
-					<div class="case_box-shape">
-						<img src="assets/images/home_two/case_shape.png" alt="">
-					</div>	
-				</div>			
-			</div>
-			<div class="case-study-single-box ">
-				<div class="case-study-thumb">
-					<img src="assets/images/home_two/case_2.png" alt="">	
-					<div class="case-study-content">
-						<p>Technology</p>
-						<h3><a href="portfolio.html">Business Implement</a></h3>
-						<p class="case_text">Media leadership skill before cross
-							platforms without done</p>
-						<div class="consalt_btn style_two style_four">
-							<a href="protfolio-details.html">View Details<span></span></a>
-						</div>	
-					</div>
-					<div class="case_box-shape">
-						<img src="assets/images/home_two/case_shape.png" alt="">
-					</div>	
-				</div>			
-			</div>
-			<div class="case-study-single-box ">
-				<div class="case-study-thumb">
-					<img src="assets/images/home_two/case_3.png" alt="">	
-					<div class="case-study-content">
-						<p>Technology</p>
-						<h3><a href="portfolio.html">Business Implement</a></h3>
-						<p class="case_text">Media leadership skill before cross
-							platforms without done</p>
-						<div class="consalt_btn style_two style_four">
-							<a href="protfolio-details.html">View Details<span></span></a>
-						</div>	
-					</div>
-					<div class="case_box-shape">
-						<img src="assets/images/home_two/case_shape.png" alt="">
-					</div>	
-				</div>			
-			</div>
-			<div class="case-study-single-box ">
-				<div class="case-study-thumb">
-					<img src="assets/images/home_two/case_4.png" alt="">	
-					<div class="case-study-content">
-						<p>Technology</p>
-						<h3><a href="portfolio.html">Business Implement</a></h3>
-						<p class="case_text">Media leadership skill before cross
-							platforms without done</p>
-						<div class="consalt_btn style_two style_four">
-							<a href="protfolio-details.html">View Details<span></span></a>
-						</div>	
-					</div>
-					<div class="case_box-shape">
-						<img src="assets/images/home_two/case_shape.png" alt="">
-					</div>	
-				</div>			
-			</div>
-			<div class="case-study-single-box upper">
-				<div class="case-study-thumb">
-					<img src="assets/images/home_two/case_5.png" alt="">	
-					<div class="case-study-content">
-						<p>Technology</p>
-						<h3><a href="portfolio.html">Business Implement</a></h3>
-						<p class="case_text">Media leadership skill before cross
-							platforms without done</p>
-						<div class="consalt_btn style_two style_four">
-							<a href="protfolio-details.html">View Details<span></span></a>
-						</div>	
-					</div>
-					<div class="case_box-shape">
-						<img src="assets/images/home_two/case_shape.png" alt="">
-					</div>	
-				</div>			
-			</div>
-		</div>
-	</div>
+
 </section>
 <!--==================================================-->
 <!-- End Consalt case study Area Style Two-->
@@ -1218,46 +1166,7 @@
 <!-- End Consalt Blog Area style Two-->
 <!--==================================================-->
 
-<!--==================================================-->
-<!-- Start Consalt Call Area -->
-<!--==================================================-->
-<section class="call_area style_three">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-4 col-md-6">
-				<div class="call-do-action-info">
-					<div class="call-do-social_icon">
-						<i class="fas fa-phone-alt"></i>
-					</div>
-					<div class="call_info">
-						<p>Say Hello</p>
-						<h3>example@gmail.com</h3>
-					</div>
-				</div>		
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="footer_logo">
-					<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
-				</div>
-			</div>
 
-			<div class="col-lg-4 col-md-6">
-				<div class="call_social_icon">
-					<ul>
-						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-						<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-						<li><a class="top-social-icon-left" href="#"><i class="fab fa-twitter"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-	</div>
-</section>
-<!--==================================================-->
-<!-- End Consalt Call Area -->
-<!--==================================================-->
 
 
 <!--==================================================-->
@@ -1280,7 +1189,28 @@
 					</form>
 				</div>
 			</div>
-			<div class="col-lg-1"></div>
+			<div class="col-lg-2 col-md-6">
+				<div class="footer-widget-content style_two">
+					<div class="footer-widget-title">
+						<h4>Company</h4>
+					</div>
+					<div class="footer-widget-menu">
+						<ul>
+							<li><a href="#"> Main Land</a></li>
+							<li><a href="#"> Free Zone</a></li>
+							<li><a href="#"> Off-Shore</a></li>
+							<li><a href="#"> Pro Services</a></li>
+						
+							<li><a href="#"> golden-visa</a></li>
+							<li><a href="#">  VAT</a></li>
+							<li><a href="#"> Corporate Tax Service</a></li>
+							<li><a href="#"> Accounting & bookkeeping Services</a></li>
+						
+							
+						</ul>
+					</div>
+				</div>
+			</div>
 			<div class="col-lg-2 col-md-6"> 
 				<div class="footer-widget-content style_two">
 					<div class="footer-widget-title">
@@ -1288,27 +1218,39 @@
 					</div>
 					<div class="footer-widget-menu">
 						<ul>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> About Us</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Meet the Team</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Integrations</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Contact Us</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Blog</a></li>
+							<li><a href="#"> speacial Advisory</a></li>
+							<li><a href="#"> Virtual CFO</a></li>
+							<li><a href="#"> Outsourced Accountant</a></li>
+							<li><a href="#"> bank-account-opening</a></li>
+							<li><a href="#"> Non-resident Bank Account</a></li>
+
+							<li><a href="#"> Shah Loan Consultation</a></li>
+							<li><a href="#"> 
+							Intellectual Property Registeration	 
+							</a></li>
+							<li><a href="#"> Fixed Assets Management</a></li>
+						
 						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6">
+			<div class="col-lg-2 col-md-6">
 				<div class="footer-widget-content style_two">
 					<div class="footer-widget-title">
 						<h4>Service</h4>
 					</div>
 					<div class="footer-widget-menu">
 						<ul>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Consultant</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Web Development</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> UI Design</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Networking</a></li>
-							<li><a href="#"><i class="bi bi-chevron-double-right"></i> Search Engine</a></li>
+							<li><a href="#">  Stocks Counts</a></li>
+							<li><a href="#">  Due Delligence Assurance</a></li>
+							<li><a href="#"> Agreed-upon Procedure</a></li>
+							<li><a href="#"> Pro Services</a></li>
+							<li><a href="#">  Anti moneylaundring Complaince</a></li>
+
+							<li><a href="#"> In Country valuation</a></li>
+							<li><a href="#">  Blog</a></li>
+							<li><a href="#">  Blog Details </a></li>
+						
 						</ul>
 					</div>
 				</div>
@@ -1420,6 +1362,58 @@
 <!--==================================================-->
 <!-- End Consalt Scroll Up-->
 <!--==================================================-->
+
+
+
+
+
+<!-- pop up -->
+
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+      <span class="close-btn" id="closePopupBtn">&times;</span>
+  <div class="pop-up-img">
+	<img src="assets/images/Color-wala-logo.png" alt="">
+  </div>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <input type="text" placeholder="Industry" />
+        <textarea placeholder="Message" rows="4"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+<!-- pop up -->
+
+
+<!-- pop up script -->
+
+<script>
+    const openBtn = document.getElementById("openPopupBtn");
+const closeBtn = document.getElementById("closePopupBtn");
+const popupOverlay = document.getElementById("popupOverlay");
+
+openBtn.addEventListener("click", () => {
+  popupOverlay.style.display = "flex";
+});
+
+closeBtn.addEventListener("click", () => {
+  popupOverlay.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === popupOverlay) {
+    popupOverlay.style.display = "none";
+  }
+});
+
+</script>
+
+<!-- pop up script -->
 
 	<!-- jquery js -->
 	<script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
